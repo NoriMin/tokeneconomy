@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "node setup.js",
-    "clean": "rm -rf ~/.config && sudo truffle compile && sudo chown -R $USER:$(id -gn $USER) ~/.config"
+    "clean": "rm -rf ~/.config && sudo truffle compile && sudo chown -R $USER:$(id -gn $USER) ~/.config && sudo chown -R $USER:$(id -gn $USER) ./"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.3",
     "bn.js": "^4.11.8",
